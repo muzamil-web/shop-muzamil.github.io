@@ -341,7 +341,7 @@ body {
 #sm-banner {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -576,24 +576,408 @@ body {
     background-color: #ffffff;
 }
 
+/* ---shop page---  */
+#page-header{
+    background-image: url(img/banner/my-b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+#page-header a img{
+    box-shadow: 0 0 0  1.19px #fff;
+    border-radius: 18px;
+    border: 6px solid transparent;
+    width: 60px;
+    height: 100px;
+}
+
+
+#blog-header h2,
+#blog-header p{
+    color: #fff;
+}
+#blog-header a img{
+    
+    width: 60px;
+    height: 120px;
+}
+
+
+#about-header h2,
+#about-header p{
+    color: #fff;
+}
+#about-header a img{
+    
+    width: 60px;
+    height: 120px;
+}
+
+
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #1419b4;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* single product */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+width: 40%;
+margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px ;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #1419b4;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+/* blog page  */
+#blog-video{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#blog-video h1{
+font-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#blog-video h1 span{
+
+color: red;
+}
+#blog-video .video{
+    width: 28%;
+    margin-bottom: 40px;
+    
+}
+#blog-video .video video {
+    box-shadow: 10px 10px 5px #6b6b6b;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/* about page */
+#page-header.about-header{
+    background-image: url("img/about/banner.png");
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head div{
+    padding: 40px;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin-top: 30px;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/* Contact page */
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+  
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+   
+}
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: #1419b4;
+    color: #fff;
+}
+
+
+
+
 /* responsive footer For all devices*/
+@media(max-width: 1280px){
+    #blog-video .video{
+        width: 20%;
+        margin-bottom: 40px;
+        
+    }
+    #sm-banner {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sm-banner .banner-box{
+        height: 99%;
+        width: 100%;
+margin-bottom: 20px;
+    }
+    #sm-banner .banner-box{
+        width: 100%;
+margin-bottom: 20px;
+    }
+
+    #banner3 {
+        /* width: 33%; */
+        padding: 0 20px;
+    }
+
+ 
+
+    #banner3 .banner-box {
+        width: 33%;
+        margin-bottom: 10px;
+        
+    }
+
+}
+
+
 @media(max-width: 767px) {
+    /* Video Blog Not Other */
+    #blog-video .video{
+        width: 50%;
+        margin-bottom: 40px;
+        
+    }
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
+    
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+    #about-head div {
+        padding: 0;
+    }
 }
 
 @media(max-width: 574px) {
+    #blog-video .video{
+        width: 55%;
+        margin-bottom: 40px;
+        
+    }
     .footer-col {
+        width: 100%;
+    }
+
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+    #about-head div {
+        padding: 0;
+    }
+    #page-header.about-header {
+       height: 46%;
+    }
+
+    /* contact page  */
+    #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+    }
+    #contact-details .map {
+        width: 100%;
+        margin: 30px 0px;
+    }
+    #form-details form {
         width: 100%;
     }
 }
 
+
 /* responsive footer code end */
 
 /* start media query */
+
+
 @media(max-width: 799px) {
+
+}
+@media(max-width: 799px) {
+
+
     .section-p1 {
         padding: 40px 40px;
     }
@@ -641,22 +1025,37 @@ body {
     #banner {
         height: 30vh;
     }
+    #sm-banner{
+        flex-wrap: wrap;
+
+    }
     #sm-banner .banner-box {
         min-width: 100%;
         height: 40vh;
     }
-
+  
     #banner3 {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 0 40px;
     }
-    #banner3 .banner-box {
-       width: 28%;
-    }
+  
     #newsletter .form {
         width: 64%;
+    }
+}
+
+@media(max-width: 731px){
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #sm-banner{
+        flex-wrap: wrap;
+
+    }
+    #sm-banner .banner-box {
+        margin-bottom: 10px;
     }
 }
 
@@ -701,6 +1100,10 @@ body {
     #banner {
         height: 40vh;
     }
+    #sm-banner{
+        flex-wrap: wrap;
+
+    }
     #sm-banner .banner-box {
         height: 30vh;
     }
@@ -712,6 +1115,7 @@ body {
     }
     #banner3 .banner-box {
         width: 100%;
+        margin-bottom: 10px;
     }
     #newsletter{
         padding: 30px 20px;
@@ -720,5 +1124,63 @@ body {
         width: 100%;
     }
 
+    /* Single Product */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details button {
+        margin-top: 8px;
+        background-color: #1419b4;
+        color: #fff;
+
+    }
+
+
+    /* about page  */
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0px;
+    }
+    #about-app .video {
+        width: 100%;
+    }
+  
+
+      /* contact page  */
+      #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+    }
+
+    #contact-details .map {
+        width: 100%;
+        margin: 30px 0px;
+    }
+    #form-details form {
+        width: 100%;
+    }
+
+
 
 }
+
+@media(max-width: 1280px){
+
+
+}
+
+
